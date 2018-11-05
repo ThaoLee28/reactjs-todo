@@ -83,7 +83,7 @@ class TodoList extends Component {
                       })
                     }}
                     type="button"
-                    className="mr-5"
+                    className="pr-5 focus:outline-none"
                   >
                     x
                   </button>
