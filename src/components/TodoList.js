@@ -73,6 +73,20 @@ class TodoList extends Component {
                   >
                     {item.value}
                   </span>
+                  <button 
+                    onClick={() => {
+                      this.setState(state => {
+                        const removeItem = state.items.filter(i => i.id !== item.id)
+                        return {
+                          items: removeItem
+                        }
+                      })
+                    }}
+                    type="button"
+                    className="mr-5"
+                  >
+                    x
+                  </button>
                 </li>
               ))}
             </ul>
